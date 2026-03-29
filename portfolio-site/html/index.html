@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clément Place – Portfolio BTS SIO SLAM</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon-cp.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="bg-overlay"></div>
+
+<!-- -- NAVBAR -- -->
+<nav>
+  <a href="index.html" class="nav-brand">CP<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="realisations.html">Réalisations Professionnelles</a></li>
+    <li><a href="rectorat.html">Rectorat</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- --------------------------
+       PAGE ACCUEIL
+  -------------------------- -->
+  <section id="accueil" class="section active" style="display:block;">
+    <div class="container">
+
+      <!-- Hero -->
+      <div class="hero fade-in">
+        <div class="hero-text">
+          <p class="greeting">Portfolio BTS SIO SLAM</p>
+          <h1 class="hero-name">Clément<br>Place</h1>
+          <p class="hero-role">Étudiant en BTS SIO SLAM</p>
+          <div class="hero-contacts">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              07 84 47 63 49
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Clementplace@outlook.com
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+              148 Rue Saint Hubert, Morgny-la-Pommeraye
+            </div>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img src="../images/Photomoin.png" alt="Clément Place" class="hero-photo" />
+          <div class="hero-photo-ring"></div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Diplômes & Certifications -->
+      <div class="fade-in">
+        <p class="section-subtitle" style="font-family:'Syne',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">Diplômes &amp; Certifications</p>
+        <ul class="diploma-list" style="margin-bottom:2.5rem;">
+          <li>Diplôme du baccalauréat technologique STI2D SIN (2024)</li>
+          <li class="diploma-clickable" onclick="openDiplomaModal('pix'); return false;" style="cursor: pointer; transition: all 0.2s;">
+            Certification PIX
+            <span style="font-size: 0.95rem; color: var(--accent); margin-left: 0.5rem;">&rarr;</span>
+          </li>
+          <li class="diploma-clickable" onclick="openDiplomaModal('rgpd'); return false;" style="cursor: pointer; transition: all 0.2s;">
+            Certificat MOOC RGPD (CNIL) – 6 certificats obtenus
+            <span style="font-size: 0.95rem; color: var(--accent); margin-left: 0.5rem;">&rarr;</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Information Personnelle & Contact -->
+      <div class="profile-grid">
+        <div class="card fade-in">
+          <h3>Informations Personnelles</h3>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; font-size: 0.95rem; color: var(--white80);">
+            <div>
+              <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.25rem;">Âge</p>
+              <p>19 ans</p>
+              <p style="font-size: 0.85rem; color: var(--white60); margin-top: 0.25rem;">Né le 28 septembre 2006 à Massy</p>
+            </div>
+            <div>
+              <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.25rem;">Permis de Conduire</p>
+              <p>Catégorie B</p>
+            </div>
+            <div>
+              <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.25rem;">Adresse</p>
+              <p>148 Rue Saint Hubert<br>76750 Morgny-la-Pommeraye</p>
+            </div>
+            <div>
+              <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.25rem;">Contact Direct</p>
+              <p><a href="mailto:placeclement@outlook.com" style="color: var(--accent); text-decoration: none; transition: opacity 0.2s;">placeclement@outlook.com</a></p>
+              <p style="margin-top: 0.25rem;"><a href="https://linkedin.com/in/clement-place" style="color: var(--accent); text-decoration: none; transition: opacity 0.2s;">LinkedIn: Clément Place</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Veille Technologique -->
+      <div class="profile-grid">
+        <div class="card fade-in">
+          <h3 style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="display: inline-block; width: 4px; height: 1.2rem; background: var(--accent); border-radius: 2px; margin-right: 0.75rem;"></span>
+            Veille Technologique
+          </h3>
+          <!-- GreenIT au centre -->
+          <div style="display: flex; justify-content: center; align-items: center; padding: 2rem 0;">
+            <span class="skill-tag" style="font-size: 1.2rem; padding: 0.75rem 1.5rem; font-weight: 600;">GreenIT</span>
+          </div>
+          <!-- Bornages en dessous -->
+          <div style="padding-top: 1.5rem; border-top: 1px solid var(--glass-border); margin-top: 1.5rem;">
+            <p style="color: var(--accent); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; text-align: center;">Bornage</p>
+            <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: center; text-align: center;">
+              <p style="color: var(--white90); font-size: 0.95rem; margin: 0;">Technique</p>
+              <p style="color: var(--white90); font-size: 0.95rem; margin: 0;">Économique</p>
+              <p style="color: var(--white90); font-size: 0.95rem; margin: 0;">Environnemental & Social</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compétences Techniques Détaillées -->
+      <div class="profile-grid">
+        
+        <!-- Langages de Programmation -->
+        <div class="card fade-in">
+          <h3 style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="display: inline-block; width: 4px; height: 1.2rem; background: var(--accent); border-radius: 2px; margin-right: 0.75rem;"></span>
+            Langages de Programmation
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Transact-SQL</span>
+            <span class="skill-tag">PowerShell</span>
+          </div>
+        </div>
+
+        <!-- Bases de Données -->
+        <div class="card fade-in">
+          <h3 style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="display: inline-block; width: 4px; height: 1.2rem; background: var(--accent); border-radius: 2px; margin-right: 0.75rem;"></span>
+            Bases de Données & Données
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">PhpMyAdmin</span>
+            <span class="skill-tag">T-SQL</span>
+          </div>
+        </div>
+
+        <!-- Frameworks & Plateformes -->
+        <div class="card fade-in">
+          <h3 style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="display: inline-block; width: 4px; height: 1.2rem; background: var(--accent); border-radius: 2px; margin-right: 0.75rem;"></span>
+            Frameworks & Plateformes
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Symfony</span>
+            <span class="skill-tag">.NET</span>
+            <span class="skill-tag">MAUI</span>
+            <span class="skill-tag">PrestaShop</span>
+          </div>
+        </div>
+
+        <!-- Logiciels & Outils -->
+        <div class="card fade-in">
+          <h3 style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="display: inline-block; width: 4px; height: 1.2rem; background: var(--accent); border-radius: 2px; margin-right: 0.75rem;"></span>
+            Logiciels & Outils
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Visual Studio Code</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">Rider</span>
+            <span class="skill-tag">Flowcode</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Proteus</span>
+            <span class="skill-tag">WampServer</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">VirtualBox</span>
+            <span class="skill-tag">VMware</span>
+            <span class="skill-tag">Suite Office</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Langues & Soft Skills -->
+      <div class="profile-grid">
+        
+        <!-- Langues -->
+        <div class="card fade-in">
+          <h3 style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="display: inline-block; width: 4px; height: 1.2rem; background: var(--accent); border-radius: 2px; margin-right: 0.75rem;"></span>
+            Langues Étrangères
+          </h3>
+          <div style="display: grid; gap: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid var(--glass-border);">
+              <span style="color: var(--white90);">Anglais</span>
+              <span style="color: var(--accent); font-weight: 600;">B2</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid var(--glass-border);">
+              <span style="color: var(--white90);">Allemand</span>
+              <span style="color: var(--accent); font-weight: 600;">B1</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills & Intéréts -->
+        <div class="card fade-in">
+          <h3 style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="display: inline-block; width: 4px; height: 1.2rem; background: var(--accent); border-radius: 2px; margin-right: 0.75rem;"></span>
+            Centres d'Intérét
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Famille & Amis</span>
+            <span class="skill-tag">Musique</span>
+            <span class="skill-tag">Voyage</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- études & Expérience -->
+      <div class="profile-grid">
+        <div class="card fade-in">
+          <h3>Parcours Académique</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2024 – 2026</span>
+              <div class="timeline-content">
+                <strong>BTS SIO SLAM</strong>
+                <span>Campus la Chétaigneraie / Le Mesnil-Esnard</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2023 – 2024</span>
+              <div class="timeline-content">
+                <strong>Bac STI2D – Option SIN</strong>
+                <span>Lycée Delamare-Debouteville, Forges-les-Eaux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- MODAL DIPLéMES -->
+<div class="modal-overlay" id="modal-diploma">
+  <div class="modal-box" style="max-width: 800px;">
+    <button class="modal-close" onclick="closeDiplomaModal()">&times;</button>
+    <h2 class="modal-title" id="diploma-title">Document</h2>
+    <img alt="" class="diploma-modal-img" id="diploma-img" style="width: 100%; border-radius: 12px; margin: 2rem 0; border: 1px solid var(--glass-border);" />
+    <div id="diploma-pdf-list" style="display: none; margin: 1.5rem 0;"></div>
+    <p style="text-align: center; color: var(--white50); font-size: 0.9rem;" id="diploma-info"></p>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP BUTTON -->
+<button id="scrollToTop" title="Revenir au haut de la page">&uarr;</button>
+
+<script>
+  // --- SCROLL TO TOP --------------------------------------------------------
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.add('show');
+    } else {
+      scrollToTopBtn.classList.remove('show');
+    }
+  });
+  
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // --- Modal Diplômes ------------------------------------------------------
+  function openDiplomaModal(type) {
+    const diplomaData = {
+      'pix': {
+        type: 'pdf-list',
+        title: 'Certification PIX',
+        files: [
+          { title: 'Certification PIX', path: '../Pix/certification-pix-20251204.pdf' }
+        ],
+        info: 'Le certificat PIX est affiché ci-dessous.'
+      },
+      'rgpd': {
+        type: 'pdf-list',
+        title: 'Certificat MOOC RGPD (CNIL) – 6 certificats obtenus',
+        files: [
+          { title: 'Certificat 1', path: '../Mooc/Certificat_1.pdf' },
+          { title: 'Certificat 2', path: '../Mooc/Certificat_2.pdf' },
+          { title: 'Certificat 3', path: '../Mooc/Certificat_3.pdf' },
+          { title: 'Certificat 4', path: '../Mooc/Certificat_4.pdf' },
+          { title: 'Certificat 5', path: '../Mooc/Certificat_5.pdf' },
+          { title: 'Certificat 6', path: '../Mooc/Certificat_6.pdf' }
+        ],
+        info: 'Tous les certificats MOOC RGPD sont affichés ci-dessous.'
+      }
+    };
+
+    const data = diplomaData[type];
+    if (!data) return;
+
+    const diplomaImg = document.getElementById('diploma-img');
+    const diplomaPdfList = document.getElementById('diploma-pdf-list');
+
+    document.getElementById('diploma-title').textContent = data.title;
+    document.getElementById('diploma-info').textContent = data.info;
+
+    if (data.type === 'pdf-list') {
+      diplomaImg.style.display = 'none';
+      diplomaImg.removeAttribute('src');
+
+      diplomaPdfList.style.display = 'grid';
+      diplomaPdfList.style.gap = '1rem';
+      diplomaPdfList.innerHTML = data.files.map(function(file) {
+        return `
+          <div style="background: var(--white05); border: 1px solid var(--glass-border); border-radius: 12px; padding: 0.9rem;">
+            <p style="margin: 0 0 0.6rem 0; color: var(--white90); font-weight: 600;">${file.title}</p>
+            <iframe src="${file.path}#toolbar=0" title="${file.title}" style="width: 100%; height: 280px; border: 1px solid var(--glass-border); border-radius: 8px; background: #fff;"></iframe>
+            <p style="margin: 0.5rem 0 0 0;">
+              <a href="${file.path}" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none; font-size: 0.9rem;">Ouvrir ${file.title} en plein ecran</a>
+            </p>
+          </div>
+        `;
+      }).join('');
+    } else {
+      diplomaPdfList.style.display = 'none';
+      diplomaPdfList.innerHTML = '';
+      diplomaImg.style.display = 'block';
+      diplomaImg.src = data.image;
+    }
+
+    document.getElementById('modal-diploma').classList.add('open');
+  }
+
+  function closeDiplomaModal() {
+    document.getElementById('modal-diploma').classList.remove('open');
+  }
+
+  document.getElementById('modal-diploma').addEventListener('click', function(e) {
+    if (e.target === this) closeDiplomaModal();
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
