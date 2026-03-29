@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisations Professionnelles | Clément Place – Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon-cp.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<div class="bg-layer"></div>
+<div class="bg-overlay"></div>
+<nav>
+  <a href="index.html" class="nav-brand">CP<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="realisations.html" class="active">Réalisations Professionnelles</a></li>
+    <li><a href="rectorat.html">Rectorat</a></li>
+  </ul>
+</nav>
+<main>
+  <section id="realisations" class="section active" style="display:block;">
+    <div class="container">
+      <div class="realisations-header">
+        <h1 class="section-title fade-in">Réalisations <span>Professionnelles</span></h1>
+        <p class="section-subtitle fade-in">Portfolio des projets et compétences développées durant mes stages BTS SIO SLAM</p>
+      </div>
+
+      <div class="realisations-grid" id="realisations-grid">
+        <a href="realisation-b1-1.html" class="realisation-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="rc-body"><div class="rc-meta"><span class="rc-stage-badge">B1.1</span></div><div class="rc-title">B1.1 - Gerer le patrimoine informatique</div></div>
+        </a>
+        <a href="realisation-b1-2.html" class="realisation-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="rc-body"><div class="rc-meta"><span class="rc-stage-badge">B1.2</span></div><div class="rc-title">B1.2 - Repondre aux incidents et demandes</div></div>
+        </a>
+        <a href="realisation-b1-3.html" class="realisation-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="rc-body"><div class="rc-meta"><span class="rc-stage-badge">B1.3</span></div><div class="rc-title">B1.3 - Developper la presence en ligne</div></div>
+        </a>
+        <a href="realisation-b1-4.html" class="realisation-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="rc-body"><div class="rc-meta"><span class="rc-stage-badge">B1.4</span></div><div class="rc-title">B1.4 - Travailler en mode projet</div></div>
+        </a>
+        <a href="realisation-b1-5.html" class="realisation-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="rc-body"><div class="rc-meta"><span class="rc-stage-badge">B1.5</span></div><div class="rc-title">B1.5 - Mettre a disposition un service</div></div>
+        </a>
+        <a href="realisation-b1-6.html" class="realisation-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="rc-body"><div class="rc-meta"><span class="rc-stage-badge">B1.6</span></div><div class="rc-title">B1.6 - Organiser son developpement pro</div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<button id="scrollToTop" title="Revenir au haut de la page">↑</button>
+<script>
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) scrollToTopBtn.classList.add('show');
+    else scrollToTopBtn.classList.remove('show');
+  });
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisation B1.4 | Clément Place – Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon-cp.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<div class="bg-layer"></div>
+<div class="bg-overlay"></div>
+<nav>
+  <a href="index.html" class="nav-brand">CP<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="realisations.html" class="active">Réalisations Professionnelles</a></li>
+    <li><a href="rectorat.html">Rectorat</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="section active" style="display:block;">
+    <div class="container">
+      <a href="realisations.html" style="display:inline-flex;align-items:center;gap:.5rem;color:var(--accent);text-decoration:none;margin-bottom:2rem;">← Retour aux réalisations</a>
+      <h1 class="section-title fade-in">Réalisation <span>B1.4 - Travailler en mode projet</span></h1>
+      <div class="card fade-in" style="margin-bottom:2rem;">
+        <h3>Sous-catégories</h3>
+        <ul style="color:var(--white80);line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;">
+          <li>Analyser les objectifs et les modalites d'organisation d'un projet</li>
+          <li>Planifier les activites</li>
+          <li>Evaluer les indicateurs de suivi d'un projet et analyser les ecarts</li>
+        </ul>
+      </div>
+      <div class="card fade-in" style="margin-bottom:2rem;">
+        <h3>TP réalisés (squelette)</h3>
+        <p style="color:var(--white80);line-height:1.7;margin-bottom:1rem;">Chaque B1.x peut contenir de 1 à 3 TP. Sélectionnez un TP pour renseigner ses images, son descriptif et les parties du B1.4 qu'il valide.</p>
+        <div class="tp-selector" data-tp-selector>
+          <div class="tp-switcher">
+            <button class="tp-btn active" type="button" data-tp-target="tp1">TP 1</button>
+          </div>
+          <div class="tp-panel active" data-tp-panel="tp1">
+            <p class="tp-panel-title">B1.4 - site Vitalia</p>
+            <p class="tp-panel-desc">Travail en mode projet sur le site Vitalia avec repartition des taches, planification des activites et suivi de l'avancement. Cette organisation m'a permis de mieux coordonner les actions, d'anticiper les priorites et de respecter les echeances fixees au sein du groupe.</p>
+            <div class="tp-gallery">
+              <div class="tp-gallery-item"><img src="../E5/HLP_arborescence.png" alt="TP 1 - Image 1" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+              <div class="tp-gallery-item"><img src="../E5/HLP_logo.webp" alt="TP 1 - Image 2" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+            </div>
+            <p class="tp-map-title">Compétences développées</p>
+            <ul class="tp-map">
+              <li><label><input type="checkbox" checked> B 1.4 - Travailler en mode projet ▸ Planifier les activités</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <h3>Résultat / Preuves</h3>
+        <p style="color:var(--white80);line-height:1.7;">Je pense avoir validé le bloc B1.4 parce que dans le TP B1.4 - site Vitalia, j'ai validé la sous-catégorie Planifier les activités du B1.4.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<button id="scrollToTop" title="Revenir au haut de la page">↑</button>
+<script>
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) scrollToTopBtn.classList.add('show');
+    else scrollToTopBtn.classList.remove('show');
+  });
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  function initTpSelectors() {
+    document.querySelectorAll('[data-tp-selector]').forEach(function(selector) {
+      const buttons = selector.querySelectorAll('.tp-btn');
+      const panels = selector.querySelectorAll('.tp-panel');
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          const target = button.getAttribute('data-tp-target');
+          buttons.forEach(function(btn) { btn.classList.remove('active'); });
+          panels.forEach(function(panel) { panel.classList.remove('active'); });
+          button.classList.add('active');
+          const targetPanel = selector.querySelector('[data-tp-panel="' + target + '"]');
+          if (targetPanel) targetPanel.classList.add('active');
+        });
+      });
+    });
+  }
+
+  initTpSelectors();
+</script>
+</body>
+</html>
+
+
+
+

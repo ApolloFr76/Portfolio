@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisation B1.3 | Clément Place – Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon-cp.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<div class="bg-layer"></div>
+<div class="bg-overlay"></div>
+<nav>
+  <a href="index.html" class="nav-brand">CP<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="realisations.html" class="active">Réalisations Professionnelles</a></li>
+    <li><a href="rectorat.html">Rectorat</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="section active" style="display:block;">
+    <div class="container">
+      <a href="realisations.html" style="display:inline-flex;align-items:center;gap:.5rem;color:var(--accent);text-decoration:none;margin-bottom:2rem;">← Retour aux réalisations</a>
+      <h1 class="section-title fade-in">Réalisation <span>B1.3 - Developper la presence en ligne de l'organisation</span></h1>
+      <div class="card fade-in" style="margin-bottom:2rem;">
+        <h3>Sous-catégories</h3>
+        <ul style="color:var(--white80);line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;">
+          <li>Participer a la valorisation de l'image de l'organisation sur les medias numeriques en tenant compte du cadre juridique et des enjeux economiques</li>
+          <li>Referencer les services en ligne de l'organisation et mesurer leur visibilite</li>
+          <li>Participer a l'evolution d'un site Web exploitant les donnees de l'organisation</li>
+        </ul>
+      </div>
+      <div class="card fade-in" style="margin-bottom:2rem;">
+        <h3>TP réalisés (squelette)</h3>
+        <p style="color:var(--white80);line-height:1.7;margin-bottom:1rem;">Chaque B1.x peut contenir de 1 à 3 TP. Sélectionnez un TP pour renseigner ses images, son descriptif et les parties du B1.3 qu'il valide.</p>
+        <div class="tp-selector" data-tp-selector>
+          <div class="tp-switcher">
+            <button class="tp-btn active" type="button" data-tp-target="tp1">TP 1</button>
+            <button class="tp-btn" type="button" data-tp-target="tp2">TP 2</button>
+          </div>
+          <div class="tp-panel active" data-tp-panel="tp1">
+            <p class="tp-panel-title">B1.3 - site Vitalia</p>
+            <p class="tp-panel-desc">Realisation d'un site web d'equipe (Vitalia) pour renforcer la presence en ligne, avec structuration des contenus et supports visuels. Ce TP m'a permis de travailler la coherence editoriale, la lisibilite des informations et l'adaptation des contenus au public cible.</p>
+            <div class="tp-gallery">
+              <div class="tp-gallery-item"><img src="../E5/HLP_arborescence.png" alt="TP 1 - Image 1" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+              <div class="tp-gallery-item"><img src="../E5/HLP_logo.webp" alt="TP 1 - Image 2" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+            </div>
+            <p class="tp-map-title">Compétences développées</p>
+            <ul class="tp-map">
+              <li><label><input type="checkbox" checked> B 1.3 - Développer la présence en ligne de l'organisation ▸ Participer à l'évolution d'un site Web exploitant les données de l'organisation</label></li>
+            </ul>
+          </div>
+          <div class="tp-panel" data-tp-panel="tp2">
+            <p class="tp-panel-title">B1.3 - site CyberNews</p>
+            <p class="tp-panel-desc">Site dedie a la cybersecurite avec 2 articles publies par mois. Realise en PHP avec une base MySQL sur WampServer, ce projet m'a permis de combiner production de contenu, mise en page web et exploitation de donnees dynamiques.</p>
+            <div class="tp-gallery">
+              <div class="tp-gallery-item"><img src="../E5/Capture d'écran 2026-03-29 142958.png" alt="CyberNews - capture du site" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" loading="lazy"></div>
+            </div>
+            <p class="tp-map-title">Compétences développées</p>
+            <ul class="tp-map">
+              <li><label><input type="checkbox" checked> B 1.3 - Développer la présence en ligne de l'organisation ▸ Participer à l'évolution d'un site Web exploitant les données de l'organisation</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <h3>Résultat / Preuves</h3>
+        <p style="color:var(--white80);line-height:1.7;">Je pense avoir validé le bloc B1.3 parce que dans les TP B1.3 - site Vitalia et B1.3 - site CyberNews, j'ai validé la sous-catégorie Participer à l'évolution d'un site Web exploitant les données de l'organisation du B1.3.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<button id="scrollToTop" title="Revenir au haut de la page">↑</button>
+<script>
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) scrollToTopBtn.classList.add('show');
+    else scrollToTopBtn.classList.remove('show');
+  });
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  function initTpSelectors() {
+    document.querySelectorAll('[data-tp-selector]').forEach(function(selector) {
+      const buttons = selector.querySelectorAll('.tp-btn');
+      const panels = selector.querySelectorAll('.tp-panel');
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          const target = button.getAttribute('data-tp-target');
+          buttons.forEach(function(btn) { btn.classList.remove('active'); });
+          panels.forEach(function(panel) { panel.classList.remove('active'); });
+          button.classList.add('active');
+          const targetPanel = selector.querySelector('[data-tp-panel="' + target + '"]');
+          if (targetPanel) targetPanel.classList.add('active');
+        });
+      });
+    });
+  }
+
+  initTpSelectors();
+</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisation B1.1 | Clément Place – Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon-cp.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<div class="bg-layer"></div>
+<div class="bg-overlay"></div>
+<nav>
+  <a href="index.html" class="nav-brand">CP<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="realisations.html" class="active">Réalisations Professionnelles</a></li>
+    <li><a href="rectorat.html">Rectorat</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="section active" style="display:block;">
+    <div class="container">
+      <a href="realisations.html" style="display:inline-flex;align-items:center;gap:.5rem;color:var(--accent);text-decoration:none;margin-bottom:2rem;">← Retour aux réalisations</a>
+      <h1 class="section-title fade-in">Réalisation <span>B1.1 - Gérer le patrimoine informatique</span></h1>
+      <div class="card fade-in" style="margin-bottom:2rem;">
+        <h3>Sous-catégories</h3>
+        <ul style="color:var(--white80);line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;">
+          <li>Recenser et identifier les ressources numeriques</li>
+          <li>Exploiter des referentiels, normes et standards adoptes par le prestataire informatique</li>
+          <li>Mettre en place et verifier les niveaux d'habilitation associes a un service</li>
+          <li>Verifier les conditions de la continuite d'un service informatique</li>
+          <li>Gerer des sauvegardes</li>
+          <li>Verifier le respect des regles d'utilisation des ressources numeriques</li>
+        </ul>
+      </div>
+      <div class="card fade-in" style="margin-bottom:2rem;">
+        <h3>TP realises</h3>
+        <p style="color:var(--white80);line-height:1.7;margin-bottom:1rem;">TP SQL realises pendant l'annee, avec preuves visuelles issues du dossier E5.</p>
+        <div class="tp-selector" data-tp-selector>
+          <div class="tp-switcher">
+            <button class="tp-btn active" type="button" data-tp-target="tp1">TP 1</button>
+            <button class="tp-btn" type="button" data-tp-target="tp2">TP 2</button>
+          </div>
+          <div class="tp-panel active" data-tp-panel="tp1">
+            <p class="tp-panel-title">B1.1 - TP SQL</p>
+            <p class="tp-panel-desc">TP de manipulation et de requêtage sur des bases de données relationnelles, realise en cours de formation. J'y ai travaille la creation de structures de donnees, l'ecriture de requetes de consultation et la verification des resultats obtenus dans un contexte proche d'un besoin reel.</p>
+            <div class="tp-gallery">
+              <div class="tp-gallery-item"><img src="../E5/Capture d'écran 2026-03-29 140551.png" alt="TP SQL - Arborescence des travaux" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" loading="lazy"></div>
+              <div class="tp-gallery-item"><img src="../E5/Capture d'écran 2026-03-29 140557.png" alt="TP SQL - Fichiers formulaires" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" loading="lazy"></div>
+            </div>
+            <p class="tp-map-title">Compétences développées</p>
+            <ul class="tp-map">
+              <li><label><input type="checkbox" checked> B 1.1 - Gérer le patrimoine informatique ▸ Recenser et identifier les ressources numériques</label></li>
+            </ul>
+            <p class="tp-note">Captures: arborescence du TP SQL et fichiers de formulaires PHP/HTML.</p>
+          </div>
+          <div class="tp-panel" data-tp-panel="tp2">
+            <p class="tp-panel-title">B1.1 - TP GLPI</p>
+            <p class="tp-panel-desc">Durant le stage, j'ai traite des tickets GLPI au quotidien : remplacement de materiel defaillant, reinstallation de logiciels, support divers. Les demandes arrivaient par ticket, mail ou directement au bureau, ce qui m'a permis d'ameliorer ma reactivite, mon organisation et la tracabilite des interventions.</p>
+            <div class="tp-gallery">
+              <div class="tp-gallery-item"><img src="../E5/GLPI_Logo-color.png" alt="TP GLPI" style="width:100%;height:100%;object-fit:contain;border-radius:8px;" loading="lazy"></div>
+            </div>
+            <p class="tp-map-title">Compétences développées</p>
+            <ul class="tp-map">
+              <li><label><input type="checkbox" checked> B 1.1 - Gérer le patrimoine informatique ▸ Recenser et identifier les ressources numériques</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <h3>Résultat / Preuves</h3>
+        <p style="color:var(--white80);line-height:1.7;">Je pense avoir validé le bloc B1.1 parce que dans les TP B1.1 - TP SQL et B1.1 - TP GLPI, j'ai validé la sous-catégorie Recenser et identifier les ressources numériques du B1.1.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<button id="scrollToTop" title="Revenir au haut de la page">↑</button>
+<script>
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) scrollToTopBtn.classList.add('show');
+    else scrollToTopBtn.classList.remove('show');
+  });
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  function initTpSelectors() {
+    document.querySelectorAll('[data-tp-selector]').forEach(function(selector) {
+      const buttons = selector.querySelectorAll('.tp-btn');
+      const panels = selector.querySelectorAll('.tp-panel');
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          const target = button.getAttribute('data-tp-target');
+          buttons.forEach(function(btn) { btn.classList.remove('active'); });
+          panels.forEach(function(panel) { panel.classList.remove('active'); });
+          button.classList.add('active');
+          const targetPanel = selector.querySelector('[data-tp-panel="' + target + '"]');
+          if (targetPanel) targetPanel.classList.add('active');
+        });
+      });
+    });
+  }
+
+  initTpSelectors();
+</script>
+</body>
+</html>
+
+
+
+
