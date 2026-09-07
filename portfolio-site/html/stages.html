@@ -16,9 +16,9 @@
   <a href="index.html" class="nav-brand">CP<span>.</span></a>
   <ul class="nav-links">
     <li><a href="index.html">Accueil</a></li>
-    <li><a href="veille.html">Veille</a></li>
     <li><a href="stages.html" class="active">Stages</a></li>
     <li><a href="realisations.html">Réalisations Professionnelles</a></li>
+    <li><a href="veille.html">Veille</a></li>
     <li><a href="rectorat.html">Rectorat</a></li>
   </ul>
 </nav>
@@ -66,17 +66,7 @@
     </div>
   </section>
 </main>
-<button id="scrollToTop" title="Revenir au haut de la page">↑</button>
-<script>
-  const scrollToTopBtn = document.getElementById('scrollToTop');
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) scrollToTopBtn.classList.add('show');
-    else scrollToTopBtn.classList.remove('show');
-  });
-  scrollToTopBtn.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
+<script src="../scrolltop.js"></script>
 </body>
 </html>
 

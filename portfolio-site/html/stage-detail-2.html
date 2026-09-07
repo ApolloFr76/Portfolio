@@ -19,15 +19,15 @@
   <a href="index.html" class="nav-brand">CP<span>.</span></a>
   <ul class="nav-links">
     <li><a href="index.html">Accueil</a></li>
-    <li><a href="veille.html">Veille</a></li>
     <li><a href="stages.html" class="active">Stages</a></li>
     <li><a href="realisations.html">Réalisations Professionnelles</a></li>
+    <li><a href="veille.html">Veille</a></li>
     <li><a href="rectorat.html">Rectorat</a></li>
   </ul>
 </nav>
 
 <main>
-  <section class="section active" style="display: block;">
+  <section class="section active stage-detail-page" style="display: block;">
     <div class="container">
       <!-- Back button -->
       <a href="stages.html" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; transition: all 0.2s;" onmouseover="this.style.gap='0.75rem'" onmouseout="this.style.gap='0.5rem'">
@@ -61,10 +61,10 @@
       <!-- Description Section -->
       <div class="card fade-in" style="margin-bottom: 2.5rem;">
         <h3>Description du Stage</h3>
-        <p style="color: var(--white80); line-height: 1.7; margin-bottom: 1rem;">
+        <p class="content-text" style="color: var(--white80); line-height: 1.7; margin-bottom: 1rem;">
           Chez NumOne, j'ai eu l'opportunité de travailler sur des projets de développement web pour NumOne, ce qui m'a permis de mettre en pratique mes compétences en développement et de découvrir les différentes étapes d'un projet informatique, de la conception à la mise en production.
         </p>
-        <p style="color: var(--white80); line-height: 1.7;">
+        <p class="content-text" style="color: var(--white80); line-height: 1.7;">
           J'ai également pu collaborer avec une équipe de professionnels passionnés, ce qui m'a permis d'apprendre beaucoup sur le travail en équipe, la gestion de projet et les bonnes pratiques de développement.
         </p>
       </div>
@@ -146,9 +146,9 @@
 
           <!-- 5. Admin Dashboard -->
           <article class="stage-shot">
-            <img src="../Stage 2/cpl_stage2_dashboard_prestashop_metrics.png" alt="Dashboard PrestaShop">
-            <h4>Tableau de Bord Admin</h4>
-            <p>Interface PrestaShop avec métriques de ventes et activités en temps réel</p>
+            <img src="../Stage 2/cpl_stage2_dashboard_prestashop_metrics.png" alt="Email de contact StockOne">
+            <h4>Email de contact</h4>
+            <p>Message reçu depuis l'adresse de contact de la boutique StockOne.</p>
           </article>
 
           <!-- 6. Product Showcase -->
@@ -188,31 +188,73 @@
 
           <!-- 14. FAQ Support -->
           <article class="stage-shot">
-            <img src="../Stage 2/cpl_stage2_page_faq_accordion.png" alt="FAQ support">
-            <h4>Centre d'Aide</h4>
-            <p>Interface FAQ avec questions fréquentes en accordéon pour assistance client</p>
+            <img src="../Stage 2/cpl_stage2_page_faq_accordion.png" alt="Liste des produits de la boutique">
+            <h4>Liste des produits</h4>
+            <p>Vue de la liste des produits avec leurs références et leurs informations principales.</p>
           </article>
 
           <!-- 15. Team Information -->
           <article class="stage-shot">
-            <img src="../Stage 2/cpl_stage2_contexte_contact_numone_support.png" alt="Équipe NumOne">
-            <h4>Contact Support</h4>
-            <p>Équipe support NumOne avec coordonnées et email support@numone.fr</p>
+            <img src="../Stage 2/cpl_stage2_contexte_contact_numone_support.png" alt="Locaux de NumOne">
+            <h4>Locaux de NumOne</h4>
+            <p>Vue extérieure des locaux de l'entreprise NumOne.</p>
           </article>
 
           <!-- 16. Distribution Network -->
           <article class="stage-shot">
-            <img src="../Stage 2/cpl_stage2_schema_distribution_network_france.png" alt="Réseau distribution">
-            <h4>Logistique Distribution</h4>
-            <p>Cartographie du réseau de distribution en France avec hub centralisé à Paris</p>
+            <img src="../Stage 2/cpl_stage2_schema_distribution_network_france.png" alt="Gestion des catégories PrestaShop">
+            <h4>Gestion des catégories</h4>
+            <p>Interface d'administration PrestaShop pour gérer les catégories de la boutique.</p>
           </article>
+          <article class="stage-shot">
+            <img src="../Stage 2/cpl_stage2_barre_laterale.png" alt="Barre latérale du back-office PrestaShop" loading="lazy">
+            <h4>Barre latérale de navigation</h4>
+            <p>La barre latérale permet d'accéder aux rubriques du back-office, notamment à Paramètres avancés puis à la gestion de l'équipe.</p>
+          </article>
+
+          <article class="stage-shot">
+            <img src="../Stage 2/cpl_stage2_employes_onglets.png" alt="Onglets de gestion des employés PrestaShop" loading="lazy">
+            <h4>Onglets de gestion</h4>
+            <p>Accès aux trois espaces de configuration : employés, profils et permissions.</p>
+          </article>
+
+          <article class="stage-shot">
+            <img src="../Stage 2/cpl_stage2_employes_liste.png" alt="Liste des employés PrestaShop" loading="lazy">
+            <h4>Liste des employés</h4>
+            <p>Vue d'ensemble des comptes employés avec leur adresse e-mail, leur profil et leur statut d'activation.</p>
+          </article>
+
+          <article class="stage-shot">
+            <img src="../Stage 2/cpl_stage2_employe_formulaire.png" alt="Formulaire de création d'un employé PrestaShop" loading="lazy">
+            <h4>Ajouter un employé</h4>
+            <p>Formulaire permettant de renseigner l'identité, l'adresse e-mail, la langue et la page d'accueil du nouvel utilisateur.</p>
+          </article>
+
+          <article class="stage-shot">
+            <img src="../Stage 2/cpl_stage2_profils_liste.png" alt="Liste des profils utilisateurs PrestaShop" loading="lazy">
+            <h4>Types d'utilisateurs</h4>
+            <p>Liste des profils disponibles, comme SuperAdmin, Logisticien, Traducteur et Commercial.</p>
+          </article>
+
+          <article class="stage-shot">
+            <img src="../Stage 2/cpl_stage2_profil_modification.png" alt="Modification d'un profil utilisateur PrestaShop" loading="lazy">
+            <h4>Modifier un type d'utilisateur</h4>
+            <p>Écran de modification d'un profil avec son nom, sa langue et l'enregistrement des changements.</p>
+          </article>
+
+          <article class="stage-shot">
+            <img src="../Stage 2/cpl_stage2_permissions_profil.png" alt="Permissions d'un profil utilisateur PrestaShop" loading="lazy">
+            <h4>Configurer les permissions</h4>
+            <p>Attribution des droits Afficher, Ajouter, Modifier et Supprimer pour les menus et les modules du profil.</p>
+          </article>
+
         </div>
       </div>
 
       <!-- Reflection Section -->
       <div class="card fade-in">
         <h3>Bilan et Réflexion</h3>
-        <p style="color: var(--white80); line-height: 1.7;">
+        <p class="content-text" style="color: var(--white80); line-height: 1.7;">
           Ce stage m'a permis de valider les compétences du Bloc 1, et de découvrir avec des professionnels le monde de l'entreprise et son fonctionnement. Je remercie NumOne et mon tuteur Valentin Blondel pour cette expérience enrichissante.
         </p>
       </div>
@@ -220,29 +262,7 @@
   </section>
 </main>
 
-<!-- SCROLL TO TOP BUTTON -->
-<button id="scrollToTop" title="Revenir au haut de la page">↑</button>
-
-<script>
-  // ─── SCROLL TO TOP ────────────────────────────────────────────────────────
-  const scrollToTopBtn = document.getElementById('scrollToTop');
-  
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) {
-      scrollToTopBtn.classList.add('show');
-    } else {
-      scrollToTopBtn.classList.remove('show');
-    }
-  });
-  
-  scrollToTopBtn.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
+<script src="../scrolltop.js"></script>
 
 </body>
 </html>
-
-
-
-

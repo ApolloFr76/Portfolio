@@ -735,9 +735,13 @@ main { position: relative; z-index: 10; }
 }
 
 .stage-shot p {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--white80);
   line-height: 1.55;
+}
+
+.stage-detail-page .content-text {
+  font-size: 1.05rem;
 }
 
 /* ═══════════════════════════════════════

@@ -20,9 +20,9 @@
   <a href="index.html" class="nav-brand">CP<span>.</span></a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">Accueil</a></li>
-    <li><a href="veille.html">Veille</a></li>
     <li><a href="stages.html">Stages</a></li>
     <li><a href="realisations.html">Réalisations Professionnelles</a></li>
+    <li><a href="veille.html">Veille</a></li>
     <li><a href="rectorat.html">Rectorat</a></li>
   </ul>
 </nav>
@@ -273,24 +273,9 @@
   </div>
 </div>
 
-<!-- SCROLL TO TOP BUTTON -->
-<button id="scrollToTop" title="Revenir au haut de la page">&uarr;</button>
+<script src="scrolltop.js"></script>
 
 <script>
-  // --- SCROLL TO TOP --------------------------------------------------------
-  const scrollToTopBtn = document.getElementById('scrollToTop');
-  
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) {
-      scrollToTopBtn.classList.add('show');
-    } else {
-      scrollToTopBtn.classList.remove('show');
-    }
-  });
-  
-  scrollToTopBtn.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
 
   // --- Modal Diplômes ------------------------------------------------------
   function openDiplomaModal(type) {
