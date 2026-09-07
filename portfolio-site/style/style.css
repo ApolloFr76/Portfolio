@@ -106,7 +106,7 @@ main { position: relative; z-index: 10; }
 .section {
   display: none;
   min-height: 100vh;
-  padding: 108px 0 4rem;
+  padding: 108px clamp(30px, 5.5vw, 100px) 4rem;
 }
 .section.active { display: block; }
 
